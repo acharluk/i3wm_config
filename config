@@ -40,6 +40,24 @@ set $_workspace_10	Music
 ### Custom menus ###
 
 # Power management
+set $_menu_power "(E)xit (L)ock (S)uspend (H)ibernate (P)ower off (R)eboot"
+set $_lock_screen_color 282828
+
+mode $_menu_power {
+
+	bindsym e exec i3-msg exit			; mode "default"
+	bindsym l exec i3lock -c $_lock_screen_color	; mode "default"
+	bindsym s exec systemctl suspend		; mode "default" ; exec i3lock -c $_lock_screen_color
+	bindsym s exec systemctl hybrid-sleep		; mode "default" ; exec i3lock -c $_lock_screen_color
+	bindsym p exec systemctl poweroff
+	bindsym r exec systemctl reboot
+
+	#Exit menu
+	bindsym Escape mode "default"
+}
+
+#Assign menu to key combination
+bindsym $mod+Print mode $_menu_power
 
 # Brightness
 
