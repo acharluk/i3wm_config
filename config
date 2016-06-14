@@ -15,11 +15,11 @@
 # Programs
 set $_terminal	i3-sensible-terminal
 
-set $internet_browser	firefox
-set $music_player	clementine
-set $messaging_app	~/Apps/Telegram/Telegram
+set $_internet_browser	firefox
+set $_music_player	clementine
+set $_messaging_app	~/Apps/Telegram/Telegram
 
-set $wallpaper_path	~/Pictures/wallpaper.jpg
+set $_wallpaper_path	~/Pictures/wallpaper.jpg
 
 # Workspace names
 set $_workspace_1	Internet
