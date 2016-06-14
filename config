@@ -9,6 +9,13 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+
+### Custom variables -> Edit these as you like! ###
+
+set $_terminal	i3-sensible-terminal
+
+### END Custom variables ###
+
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -30,7 +37,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec $_terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -154,3 +161,9 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+### Custom configuration ###
+
+
+
+### END Custom configuration ###
