@@ -12,21 +12,38 @@
 
 ### Custom variables -> Edit these as you like! ###
 
+# Programs
 set $_terminal	i3-sensible-terminal
 
+set $internet_browser	firefox
+set $music_player	clementine
+set $messaging_app	~/Apps/Telegram/Telegram
+
+set $wallpaper_path	~/Pictures/wallpaper.jpg
+
 # Workspace names
-set $_workspace_1	Workspace1
-set $_workspace_2	Workspace2
-set $_workspace_3	Workspace3
+set $_workspace_1	Internet
+set $_workspace_2	Terminals
+set $_workspace_3	Telegram
 set $_workspace_4	Workspace4
 set $_workspace_5	Workspace5
 set $_workspace_6	Workspace6
 set $_workspace_7	Workspace7
 set $_workspace_8	Workspace8
 set $_workspace_9	Workspace9
-set $_workspace_10	Workspace10
+set $_workspace_10	Music
+
+# Other config
 
 ### END Custom variables ###
+
+### Custom menus ###
+
+# Power management
+
+# Brightness
+
+### END Cursom menus ###
 
 set $mod Mod4
 
